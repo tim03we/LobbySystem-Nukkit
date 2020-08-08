@@ -4,6 +4,7 @@ This LobbySystem is for beginners. I don't have to say more about that here. You
 # Config
 ```yaml
 # Use ID-Meta-Count-Slot-Name-Command
+# Placeholder: %player%
 # Example:
 # items:
 #   - 345-0-1-4-§bTeleport-help

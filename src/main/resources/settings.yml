@@ -1,5 +1,6 @@
 ---
 # Use ID-Meta-Count-Slot-Name-Command
+# Placeholder: %player%
 # Example:
 # items:
 #   - 345-0-1-4-§bTeleport-help

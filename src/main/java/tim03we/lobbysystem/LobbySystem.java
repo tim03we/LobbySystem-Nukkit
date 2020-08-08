@@ -38,6 +38,7 @@ public class LobbySystem extends PluginBase {
 
     public void giveItems(Player player, String explode)
     {
+        player.getInventory().clearAll();
         String[] get = explode.split("-");
         player.getInventory().setItem(Integer.parseInt(get[3]), Item.get(Integer.parseInt(get[0]), Integer.parseInt(get[1]), Integer.parseInt(get[2])).setCustomName(get[4]));
     }

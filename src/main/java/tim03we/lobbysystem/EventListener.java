@@ -98,7 +98,7 @@ public class EventListener implements Listener {
         String itemname = event.getItem().getName();
         for (String item : system.settings().getStringList("items")) {
             String[] get = item.split("-");
-            if(itemid == Integer.parseInt(get[0]) && itemmeta == Integer.parseInt(get[1]) && itemname.equals(get[4])) system.getServer().dispatchCommand(event.getPlayer(), get[5]);
+            if(itemid == Integer.parseInt(get[0]) && itemmeta == Integer.parseInt(get[1]) && itemname.equals(get[4])) system.getServer().dispatchCommand(event.getPlayer(), get[5].replace("%player%", "'" + event.getPlayer().getName() + "'"));
         }
     }
 }
